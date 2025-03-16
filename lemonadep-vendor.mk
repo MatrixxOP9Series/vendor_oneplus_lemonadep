@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/config/imx789:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx789 \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/config/oplus_camera_algo_switch_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_algo_switch_config \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
-    vendor/oneplus/lemonadep/proprietary/odm/etc/camera/config/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/config/oplus_preview_decision_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_preview_decision_params.json \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/config/ov08a10:$(TARGET_COPY_OUT_ODM)/etc/camera/config/ov08a10 \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/config/video_beauty_default_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/video_beauty_default_config \
@@ -839,9 +838,9 @@ PRODUCT_PACKAGES += \
     libDeVIS \
     libdehaze \
     libfastov_dsp \
+    libnightvision \
     liblvimfs \
     liblvimfs_wrapper \
-    libnightvision \
     anc.hal \
     android.hardware.secure_element@1.0-impl \
     com.qti.sensor.gc02m1b.lemonade \
@@ -868,6 +867,7 @@ PRODUCT_PACKAGES += \
     libImageWarpMask \
     libOGLManager \
     libOPLUS_SCPortrait \
+    libPerfectColor \
     libPerfectlyClearCrux \
     libPerfectlyClearCruxOpt \
     libPolarrRender \
@@ -889,6 +889,7 @@ PRODUCT_PACKAGES += \
     lib_oplus_starburst_preview \
     lib_rectify \
     libaisal \
+    libaisd \
     libancbase_segment \
     libaps_frame_registration \
     libapsdarksight \
@@ -913,6 +914,8 @@ PRODUCT_PACKAGES += \
     libarcsoft_high_dynamic_range_couple_v4 \
     libarcsoft_high_dynamic_range_v4 \
     libarcsoft_lensstaindetection \
+    libarcsoft_long_exposure_capture \
+    libarcsoft_long_exposure_preview \
     libarcsoft_low_light_hdr \
     libarcsoft_pic_best \
     libarcsoft_portraitSN_hvx_stub \
